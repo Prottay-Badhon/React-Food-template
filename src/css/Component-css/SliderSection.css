@@ -1,0 +1,41 @@
+.sliderSection{
+    background-image: url(/src//image/food3.jpeg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    margin-top: -84px;
+    background-attachment: fixed;
+
+}
+.sliderSection .dark-overlay{
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    height:100%;
+    width:100%;
+    
+}
+.sliderSection .slider-div{
+    color: white;
+}
+.sliderSection .restaurent{
+    padding-top: 260px;
+    color: white;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+.sliderSection .dark-overlay .row{
+    padding-top: 50px;
+}
+.sliderSection .img-div{
+   
+}
+
+@media(max-width: 768px){
+    .sliderSection .row{
+        margin-top: 300px;
+    }
+}
