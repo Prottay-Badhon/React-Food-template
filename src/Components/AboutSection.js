@@ -40,7 +40,7 @@ function AboutSection(props) {
     return (
         <>
         
-            <div class='aboutSection bg-light py-5'>
+            <div class='aboutSection bg-white py-5'>
 
                 <div class='row p-5'>
                     <div class='col-lg-7 px-5'>

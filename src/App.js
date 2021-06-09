@@ -4,6 +4,8 @@ import './Components/Navbar'
 import Navbar from './Components/Navbar';
 import SliderSection from './Components/SliderSection'
 import AboutSection from './Components/AboutSection'
+import ServiceSection from './Components/ServiceSection'
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
      <Navbar/>
      <SliderSection/>
      <AboutSection/>
+     <ServiceSection/>
     </div>
   );
 }

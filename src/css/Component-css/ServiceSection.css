@@ -1,0 +1,24 @@
+.serviceSection .serviceDiv .fa {
+    font-size: 50px;
+    color: burlywood;
+}
+.serviceSection .serviceDiv p{
+    color: gray;
+    line-height: 30px;
+    font-size: 19px;
+    font-family: cursive;
+}
+.serviceSection .serve1{
+    font-size: 50px;
+    color: burlywood;
+    padding: 0px;
+   
+}
+.serviceSection .serve2{
+    font-size: 56px;
+    font-family: fantasy;
+ 
+
+}
+.serviceSection .serveDiv{
+}
