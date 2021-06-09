@@ -1,0 +1,46 @@
+
+.menuSection .menu_img_div img {
+    height: 238px;
+    width: 100%;
+}
+
+
+.menu_order_div{
+    position: relative;
+    text-align: left;
+}
+.menu_order_div .dolar{
+    position: absolute;
+    right: 0;
+    top: -3px;
+    color: burlywood;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menuSection .menu_order_div button{
+    background: burlywood;
+    color: white;
+    font-size: 18px;
+    width: 112px;
+  
+}
+.menuSection .menu_order_div button:hover{
+    background: white;
+    color: burlywood;
+    border: 1px solid burlywood;
+
+
+}
+
+@media (max-width:576px) {
+    .menuSection{
+       padding-left: 0;
+       padding-right: 0;
+       padding-top:  3rem;
+    }
+}
+@media (min-width:576px) {
+    .menuSection{
+       padding: 3rem;
+    }
+}
