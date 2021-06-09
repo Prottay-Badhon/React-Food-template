@@ -1,5 +1,10 @@
 import React from 'react';
 import food1 from '../image/food1.jpeg'
+import food2 from '../image/food2.jpeg'
+import food3 from '../image/food3.jpeg'
+import food4 from '../image/food4.jpeg'
+import food5 from '../image/food5.jpeg'
+
 import '../css/Component-css/MenuSection.css'
 function MenuSection(props) {
     return (
@@ -30,7 +35,7 @@ function MenuSection(props) {
                         <div class='row'>
                             <div class='col-lg-6 col-md-12 '>
                             <div class='menu_img_div img-fluid'>
-                                <img src={food1} class=''></img>
+                                <img src={food2} class=''></img>
                             </div>
                             </div>
                             <div class='col-lg-6 py-5 col-md-12 '>
@@ -53,7 +58,7 @@ function MenuSection(props) {
                         <div class='row'>
                             <div class='col-lg-6 col-md-12'>
                             <div class='menu_img_div img-fluid'>
-                                <img src={food1} class=''></img>
+                                <img src={food3} class=''></img>
                             </div>
                             </div>
                             <div class='col-lg-6 py-5 col-md-12 '>
@@ -72,7 +77,7 @@ function MenuSection(props) {
                         <div class='row'>
                             <div class='col-lg-6 col-md-12 '>
                             <div class='menu_img_div img-fluid'>
-                                <img src={food1} class=''></img>
+                                <img src={food4} class=''></img>
                             </div>
                             </div>
                             <div class='col-lg-6 py-5 col-md-12 '>
@@ -95,7 +100,7 @@ function MenuSection(props) {
                         <div class='row'>
                             <div class='col-lg-6 col-md-12'>
                             <div class='menu_img_div img-fluid'>
-                                <img src={food1} class=''></img>
+                                <img src={food5} class=''></img>
                             </div>
                             </div>
                             <div class='col-lg-6 py-5 col-md-12 '>
@@ -114,7 +119,7 @@ function MenuSection(props) {
                         <div class='row'>
                             <div class='col-lg-6 col-md-12 '>
                             <div class='menu_img_div img-fluid'>
-                                <img src={food1} class=''></img>
+                                <img src={food2} class=''></img>
                             </div>
                             </div>
                             <div class='col-lg-6 py-5 col-md-12 '>
