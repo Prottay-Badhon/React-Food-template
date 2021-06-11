@@ -1,0 +1,55 @@
+.chefSection .social_icon li{
+        display: inline-block;
+        display: inline-block;
+        padding: 5px;
+        color: burlywood;
+        font-size: 17px;
+}
+.chefSection .card{
+    border: none;
+}
+.chefSection h1{
+    font-size: 38px;
+    font-weight: bold;
+}
+.chefSection .social_icon{
+    padding: 0;
+    margin: 0;
+}
+
+.chefSection .card p{
+    color: gray
+}
+.chefSection .card-body{
+    padding-left: 0.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+@media (max-width: 576px){
+    
+    .chefSection .card img{
+        height: 233px;
+}
+.chefSection .card {
+    width: 333px;
+    margin: auto;
+    margin-top: 2rem;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px){ 
+
+    .chefSection .card img{
+        height: 350px;
+}
+.chefSection .card {
+    width: 450px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+ }
+ 
+
+ 

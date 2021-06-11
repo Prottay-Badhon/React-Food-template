@@ -5,7 +5,7 @@ import SliderSection from './Components/SliderSection'
 import AboutSection from './Components/AboutSection'
 import ServiceSection from './Components/ServiceSection'
 import MenuSection from './Components/MenuSection'
-
+import ChefSection from './Components/ChefSection'
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
      <AboutSection/>
      <ServiceSection/>
      <MenuSection/>
+     <ChefSection/>
     </div>
   );
 }
