@@ -6,6 +6,10 @@ import AboutSection from './Components/AboutSection'
 import ServiceSection from './Components/ServiceSection'
 import MenuSection from './Components/MenuSection'
 import ChefSection from './Components/ChefSection'
+import Reservation from './Components/Reservation.js'
+import CustomerSection from './Components/CustomerSection.js'
+
+
 
 
 function App() {
@@ -17,6 +21,9 @@ function App() {
      <ServiceSection/>
      <MenuSection/>
      <ChefSection/>
+     <Reservation/>
+     <CustomerSection/>
+
     </div>
   );
 }

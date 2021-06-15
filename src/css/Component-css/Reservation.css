@@ -1,0 +1,70 @@
+.reservation_section{
+    background-image: url(/src/image/food4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 715px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.reservation_section .dark_overlay{
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.reservation_section .reservation_form input{
+    border-radius: 0%;
+    padding: 20px;
+    outline: none;
+    border: 1px solid rgb(219, 217, 217);
+    width: 100%;
+}
+.reservation_section .reservation_form input:focus{
+    border: 1px solid rgb(53, 52, 52);
+
+}
+.reservation_section .reservation_form button{
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 0%;
+    height: 60px;
+    width: 255px;
+    font-size: 20px;
+}
+.reservation_section .reservation_form button:hover{
+    background-color: white;
+    color: burlywood;
+    border: 1px solid burlywood;
+    border-radius: 0%;
+    height: 60px;
+    width: 255px;
+    font-size: 20px;
+}
+input[type="date"]::before {
+    color: #999999;
+    content: attr(placeholder);
+}
+input[type="date"] {
+    color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+    color: #666666;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+    content: "" !important;
+}
+.reservation_form .head1{
+    color: burlywood;
+}
+.reservation_form .head2{
+    font-size: 3rem;
+}

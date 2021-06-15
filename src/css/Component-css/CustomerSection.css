@@ -1,0 +1,45 @@
+.customerSection .card img{
+    height: 140px;
+    width: 140px;
+    margin-left: 76px;
+}
+.customerSection .card{
+    
+    padding: 2rem;
+    border: none;
+    position: relative;
+    text-align: center;
+}
+.customerSection .card .card-text{
+    font-size: 22px;
+    color: gray;
+    line-height: 2rem;
+    
+}
+.customerSection .card .card-body{
+   padding: 0%;
+   margin-top: 2rem;
+    
+}
+.customerSection .card .card-body .customer{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;  
+ }
+ .customerSection .card .quote{
+    height: 40px;
+    width: 40px;
+    background: burlywood;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: 206px;
+    top: 141px;
+ }
+ .customerSection .slick-dots li button:before {
+    font-size: 20px;
+   
+}
