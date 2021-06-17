@@ -1,5 +1,4 @@
 import React from 'react';
-import food1 from '../image/food1.jpeg'
 import chef1 from '../image/chef1.jpeg'
 
 import chef3 from '../image/chef3.jpg'

@@ -8,7 +8,8 @@ import MenuSection from './Components/MenuSection'
 import ChefSection from './Components/ChefSection'
 import Reservation from './Components/Reservation.js'
 import CustomerSection from './Components/CustomerSection.js'
-
+import RecentPost from './Components/RecentPost';
+import Footer from './Components/Footer';
 
 
 
@@ -23,7 +24,8 @@ function App() {
      <ChefSection/>
      <Reservation/>
      <CustomerSection/>
-
+      <RecentPost/>
+      <Footer/>
     </div>
   );
 }

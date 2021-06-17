@@ -1,0 +1,28 @@
+.recentPost .card{
+    border: none;
+
+}
+.recentPost .card-body{
+   position: relative;
+}
+.recentPost h1{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.recentPost .card p{
+    color: gray
+}
+
+.recentPost .card img{
+    height: 300px;
+}
+
+ 
+.recentPost .card .comment{
+    position: absolute;
+    right: 0;
+    color: gray;
+    font-size: 16px;
+
+}

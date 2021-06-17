@@ -40,7 +40,42 @@ function CustomerSection(props) {
                 <div class='container'>
                     <Slider {...settings}>
                         <div class="card">
-                            <img class="card-img-top rounded-circle" src={face1} alt="Card image cap"/>
+                             <img class=" rounded-circle mx-auto" src={face1} alt="Card image cap"></img>
+                             <div class='quote'><i class="fas fa-quote-left"></i></div>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                A small river named Duden flows by their
+                                 place and supplies it with the necessary regelialia.
+                                   
+                                </p>
+                                <h4 class='mt-4 text-gray'>
+                                    Rose Headerson
+                                </h4>
+                                <p class='customer'>CUSTOMER</p>
+                            </div>
+                            </div>
+
+                            <div class="card">
+                            <img class="rounded-circle mx-auto" src={face2} alt="Card image cap"/>
+                            <div class='quote'><i class="fas fa-quote-left"></i></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                A small river named Duden flows by their
+                                 place and supplies it with the necessary regelialia.
+                                   
+                                </p>
+                                <h4 class='mt-4 text-gray'>
+                                    Rose Headerson
+                                </h4>
+                                <p class='customer'>CUSTOMER</p>
+                            </div>
+                            </div>
+
+
+
+                            <div class="card">
+                            <img class="rounded-circle mx-auto" src={face3} alt="Card image cap"/>
                             <div class='quote'><i class="fas fa-quote-left"></i></div>
                             <div class="card-body">
                                 <p class="card-text">
@@ -56,7 +91,7 @@ function CustomerSection(props) {
                             </div>
 
                             <div class="card">
-                            <img class="card-img-top rounded-circle" src={face2} alt="Card image cap"/>
+                            <img class="rounded-circle mx-auto" src={face3} alt="Card image cap"/>
                             <div class='quote'><i class="fas fa-quote-left"></i></div>
                             <div class="card-body">
                                 <p class="card-text">
@@ -72,56 +107,10 @@ function CustomerSection(props) {
                             </div>
 
 
-
-                            <div class="card">
-                            <img class="card-img-top rounded-circle" src={face3} alt="Card image cap"/>
-                            <div class='quote'><i class="fas fa-quote-left"></i></div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                A small river named Duden flows by their
-                                 place and supplies it with the necessary regelialia.
-                                   
-                                </p>
-                                <h4 class='mt-4 text-gray'>
-                                    Rose Headerson
-                                </h4>
-                                <p class='customer'>CUSTOMER</p>
-                            </div>
-                            </div>
+                            
 
 
-                            <div class="card">
-                            <img class="card-img-top rounded-circle" src={face2} alt="Card image cap"/>
-                            <div class='quote'><i class="fas fa-quote-left"></i></div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                A small river named Duden flows by their
-                                 place and supplies it with the necessary regelialia.
-                                   
-                                </p>
-                                <h4 class='mt-4 text-gray'>
-                                    Rose Headerson
-                                </h4>
-                                <p class='customer'>CUSTOMER</p>
-                            </div>
-                            </div>
-
-
-                            <div class="card">
-                            <img class="card-img-top rounded-circle" src={face2} alt="Card image cap"/>
-                            <div class='quote'><i class="fas fa-quote-left"></i></div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                A small river named Duden flows by their
-                                 place and supplies it with the necessary regelialia.
-                                   
-                                </p>
-                                <h4 class='mt-4 text-gray'>
-                                    Rose Headerson
-                                </h4>
-                                <p class='customer'>CUSTOMER</p>
-                            </div>
-                            </div>
+                            
                         
                         </Slider>
                     </div>

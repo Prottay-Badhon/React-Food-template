@@ -1,14 +1,13 @@
 .customerSection .card img{
     height: 140px;
     width: 140px;
-    margin-left: 76px;
+    align-self: center;
+    position: relative;
+
 }
 .customerSection .card{
-    
     padding: 2rem;
     border: none;
-    position: relative;
-    text-align: center;
 }
 .customerSection .card .card-text{
     font-size: 22px;
@@ -26,6 +25,8 @@
     font-weight: bold;
     color: gray;  
  }
+
+ 
  .customerSection .card .quote{
     height: 40px;
     width: 40px;
@@ -42,4 +43,40 @@
  .customerSection .slick-dots li button:before {
     font-size: 20px;
    
+}
+@media(min-width: 991px) and (max-width: 1200px) {
+    .customerSection .card .quote{
+       
+        left: 180px;
+        top: 141px;
+     }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .customerSection .card .quote{
+       
+        left: 140px;
+        top: 141px;
+     }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+    .customerSection .card .quote{
+       
+        left: 276px;
+        top: 141px;
+     }
+}
+@media (min-width: 360px) and (max-width: 576px){
+    .customerSection .card .quote{
+        left: 188px;
+        top: 141px;
+     }
+}
+
+@media (width: 768px){
+    .customerSection .card .quote{
+        left: 366px;
+        top: 141px;
+     }
 }
