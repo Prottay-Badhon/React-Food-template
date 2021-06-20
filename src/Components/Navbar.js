@@ -1,49 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Link,NavLink, Switch} from "react-router-dom";
 import '../css/Component-css/Navbar.css'
 function Navbar(props) {
+
+  const [click,setClick]=useState(false)
+  
+  function showNavbar(){
+      setClick(!click);
+  }
+ 
     return (
+      
         <>
         <BrowserRouter>
-          <nav class="navbar navbar-expand-md  px-5 py-3 ">
-              <div class='mx-5'>
-                 <a class="navbar-brand" href="#">Feliciano</a>
+        <div class='myNavbar'>
+        <h4 class='text-light ml-1'>Feliciano 🎀</h4>
+                  <ul class='my_nav_item' style={{marginTop: click ? '0px' :''}}>
+                    <li><NavLink to=''>Home</NavLink></li>
+                    <li><NavLink to=''>About</NavLink></li>
+                    <li><NavLink to=''>Stories</NavLink></li>
+                    <li><NavLink to=''>Contact</NavLink></li>
+                    <li><NavLink to=''><button class='btn'>Book a table</button></NavLink></li>
+                  </ul>
+              <div class='bar' onClick={showNavbar}>
+              <i className={click ? 'fas fa-close': 'fas fa-bars'}> </i><span> MENU</span>
               </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse px-5">
-    <ul class="navbar-nav ml-auto">
-      <li class="my-nav-item active">
-          <NavLink to='/' class='activeStyle'>Home</NavLink>
-      </li>
-      <li class="my-nav-item">
-      <NavLink to='' class='activeStyle'>About</NavLink>
-      </li>
-     
-      <li class="my-nav-item">
-      <NavLink to='' class='activeStyle'>Menu</NavLink>
-      </li>
-      <li class="my-nav-item">
-      <NavLink to='' class='activeStyle'>Stories</NavLink>
-      </li>
-
-      <li class="my-nav-item">
-      <NavLink to='' class='activeStyle'>Contact</NavLink>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn" type="submit">Book a table</button>
-    </form>
-  </div>
-</nav>  
-
-<Switch>
-    <Route exact-path='/'></Route>
-    
-</Switch>
-</BrowserRouter>
+                </div>
+        </BrowserRouter>
+            
         </>
     );
 }

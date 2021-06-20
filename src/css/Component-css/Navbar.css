@@ -1,23 +1,92 @@
-.navbar  .navbar-nav .my-nav-item a{
+.myNavbar{
+    
+    display: flex;
+    position: relative;
+    height: 100px;
+    align-items: center;
+    border-bottom: .5px solid #504e4e
+    
+}
+.myNavbar   .my_nav_item li{
+    display: inline-flex;
     padding: 10px;
-    font-size: 16px;
+    cursor: pointer;
+}
+.myNavbar  .my_nav_item li a{
+    font-size: 18px;
     color: white;
     text-decoration: none;
 }
-.navbar{
-    background: transparent;
+.myNavbar  .my_nav_item li a:hover{
+  
+    color: burlywood;
 }
-.collapse .btn{
+.myNavbar  .my_nav_item{
+    position: absolute;
+    right: 100px;
+
+}
+
+.myNavbar   .my_nav_item button{
     background: #C8A97E;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 13px;
     padding-bottom: 13px;
-    width: 130px;
 
 }
-.navbar .navbar-brand{
-    font-weight: bold;
-    color: white;
+@media(max-width: 768px){
+    .myNavbar{
+        background: black;
+        border-bottom: none;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99999;
+    }
+    .myNavbar .my_nav_item li{
+        width: 100%;
+        margin-top: 5px;
+    }
+  
+   
+    .myNavbar .my_nav_item{
+        padding: 0;
+        margin: 0;
+        display: grid;
+        top: 70px;   
+        position: absolute;
+        left: 0;
+        background: black;
+        width: 100%;
+        margin-top: -500px;
+        transition: .7s;
+    }
+    
+
+}
+.myNavbar .bar{
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+}
+
+
+
+@media(min-width: 768px){
+    .myNavbar{
+      
+        border-bottom: .5px solid #504e4e
+    }
+    .myNavbar .bar{
+       visibility: hidden;
+    }
+    .myNavbar .my_nav_item{
+        
+        visibility: visible;
+    }
 }

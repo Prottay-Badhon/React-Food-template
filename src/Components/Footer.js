@@ -51,7 +51,7 @@ function Footer(props) {
                                 <h3 class='mb-5'>Open Hours</h3>
                                 <table class=''>
                                     <tr class=''>
-                                        <td>Monday</td>
+                                        <td>Sunday</td>
                                         <td class='pl-5'>9:00 - 24:00</td>
 
                                     </tr>
@@ -62,31 +62,27 @@ function Footer(props) {
                                     </tr>
 
                                     <tr>
-                                        <td>Monday</td>
+                                        <td>Tuesday</td>
                                         <td class='pl-5'>9:00 - 24:00</td>
 
                                     </tr>
                                     <tr>
-                                        <td>Monday</td>
+                                        <td>Wednesday</td>
                                         <td class='pl-5'>9:00 - 24:00</td>
 
                                     </tr>
 
                                     <tr>
-                                        <td>Monday</td>
+                                        <td>Thursday</td>
                                         <td class='pl-5'>9:00 - 24:00</td>
 
                                     </tr>
                                     <tr>
-                                        <td>Monday</td>
+                                        <td>Friday</td>
                                         <td class='pl-5'>9:00 - 24:00</td>
 
                                     </tr>
-                                    <tr>
-                                        <td>Monday</td>
-                                        <td class='pl-5'>9:00 - 24:00</td>
-
-                                    </tr>
+                                   
                                     
                                 </table>
                             </div>
