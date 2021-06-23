@@ -1,0 +1,25 @@
+
+
+.menuPage .contentDiv button{
+    background: burlywood;
+    color: white;
+    font-size: 18px;
+    width: 112px;
+  
+}
+.menuPage .contentDiv button:hover{
+    background: white;
+    color: burlywood;
+    border: 1px solid burlywood;
+
+
+}
+.menuPage .dolar{
+    position: absolute;
+    right: 15px;
+    top:0;
+    font-size: 25px;
+    color: burlywood;
+    font-weight: bold;
+
+}

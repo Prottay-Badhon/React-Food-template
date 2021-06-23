@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Link,NavLink, Switch} from "react-router-dom";
+import Menu from '../Pages/Menu'
 import '../css/Component-css/Navbar.css'
 function Navbar(props) {
 
@@ -18,7 +19,7 @@ function Navbar(props) {
                   <ul class='my_nav_item' style={{marginTop: click ? '0px' :''}}>
                     <li><NavLink to=''>Home</NavLink></li>
                     <li><NavLink to=''>About</NavLink></li>
-                    <li><NavLink to=''>Stories</NavLink></li>
+                    <li><NavLink to='/menu'>Menu</NavLink></li>
                     <li><NavLink to=''>Contact</NavLink></li>
                     <li><NavLink to=''><button class='btn'>Book a table</button></NavLink></li>
                   </ul>
@@ -26,6 +27,7 @@ function Navbar(props) {
               <i className={click ? 'fas fa-close': 'fas fa-bars'}> </i><span> MENU</span>
               </div>
                 </div>
+
         </BrowserRouter>
             
         </>

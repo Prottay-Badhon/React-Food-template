@@ -12,17 +12,19 @@ import ChefSection from '../Components/ChefSection'
 import Reservation from '../Components/Reservation.js'
 import CustomerSection from '../Components/CustomerSection.js'
 import RecentPost from '../Components/RecentPost';
+import Menu from './Menu';
 
 function HomePage(props) {
     return (
         <>
-            <SliderSection/>
+     <SliderSection/>
      <AboutSection/>
      <ServiceSection/>
      <MenuSection/>
      <ChefSection/>
      <Reservation/>
      <CustomerSection/>
+
       <RecentPost/>
         </>
     );
