@@ -15,11 +15,14 @@
 
 }
 .menuPage .dolar{
-    position: absolute;
-    right: 15px;
-    top:0;
+   
     font-size: 25px;
     color: burlywood;
     font-weight: bold;
 
+}
+@media(max-width: 991px){
+    .menuPage .firstRow{
+        margin-top: 750px;
+    }
 }

@@ -43,11 +43,9 @@
 .sliderSection .dark-overlay .row{
     padding-top: 50px;
 }
-.sliderSection .img-div{
-   
-}
 
-@media(max-width: 768px){
+
+@media(max-width: 991px){
     .sliderSection .row{
         margin-top: 300px;
     }
