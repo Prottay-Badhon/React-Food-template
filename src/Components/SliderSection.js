@@ -28,7 +28,7 @@ function SliderSection(props) {
                        
                         <div class='col-lg-3'>
                             <div class='slider-div' data-aos='fade-down'>
-                                <img  src={props.food1} class='rounded-circle' style={{ height: '70px', width: '70px'}}></img>
+                                <img  src={props.food1} class='rounded-circle'></img>
                                 <div>
                                     <h6>{props.food1Name}</h6>
                                     <p class='text-muted'>
@@ -39,7 +39,7 @@ function SliderSection(props) {
                         </div>
                         <div class='col-lg-3'>
                             <div class='slider-div' data-aos='fade-down'>
-                                <img  src={props.food2} class='rounded-circle' style={{ height: '70px', width: '70px'}}></img>
+                                <img  src={props.food2} class='rounded-circle'></img>
                                 <div>
                                     <h6>{props.food2Name}</h6>
                                     <p class='text-muted'>
@@ -52,7 +52,7 @@ function SliderSection(props) {
 
                         <div class='col-lg-3'>
                             <div class='slider-div' data-aos='fade-up' data-aos-easing="ease">
-                                <img  src={props.food3} class='rounded-circle' style={{ height: '70px', width: '70px'}}></img>
+                                <img  src={props.food3} class='rounded-circle'></img>
                                 <div>
                                     <h6>{props.food3Name}</h6>
                                     <p class='text-muted'>
@@ -64,7 +64,7 @@ function SliderSection(props) {
                         </div>
                         <div class='col-lg-3'>
                             <div class='slider-div' data-aos='fade-up' data-aos-easing="ease">
-                                <img  src={props.food4} class='rounded-circle' style={{ height: '70px', width: '70px'}}></img>
+                                <img  src={props.food4} class='rounded-circle'></img>
                                 <div>
                                     <h6>{props.food4Name}</h6>
                                     <p class='text-muted'>

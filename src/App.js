@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Link,NavLink, Switch} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{margin: "0px"}}>
      
      <BrowserRouter>
 

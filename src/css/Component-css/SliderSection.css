@@ -50,3 +50,15 @@
         margin-top: 300px;
     }
 }
+@media(max-width: 991px){
+    .sliderSection .slider-div img{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media(min-width: 991px){
+    .sliderSection .slider-div img{
+        height: 70px;
+        width: 70px;
+    }
+}

@@ -42,20 +42,13 @@ function AboutSection(props) {
         
             <div class='aboutSection bg-white text-center py-5'>
 
-                <div class='row p-5'>
-                    <div class='col-lg-7  col-sm-12 px-5'>
-                        <div class='row'>
-                            <div class='col-lg-6 col-sm-12'>
-                                    <img src={chef1} class='img-fluid'></img>
-                            </div>
-                            <div class='col-lg-6 col-sm-12 py-5'>
-                                <div class='img-div'>
-                                    <img src={chef2} class='img-fluid'></img>
-                                </div>
-                            </div>
-                        </div>
+                <div class='row'>
+                    <div class='col-lg-7 col-md-12'>
+                         <img src={chef1} class='img-fluid m-3'></img>
+                        <img src={chef2} class='img-fluid mt-lg-5'></img>
+                        
                     </div>
-                    <div class='col-lg-5  col-sm-12'>
+                    <div class='col-lg-5 col-md-12 p-5'>
                         <div class='feliciano text-left'>
                             <h1 style={{ color: '#8c6f07'}}> 𝒜𝒷♡𝓊𝓉</h1>
                             <h1 class='font-italic'>𝐹𝑒𝓁𝒾𝒸𝒾𝒶𝓃𝑜 Restaurant</h1>

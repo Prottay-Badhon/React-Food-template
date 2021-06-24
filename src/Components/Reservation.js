@@ -9,27 +9,27 @@ function Reservation(props) {
                        
 
                         <div class='col-lg-7'>
-                        <form class='bg-white p-5 reservation_form'>
+                        <form class='bg-white reservation_form responsive'>
                        <div class='text-center'>
                        <h1 class='head1'>𝐵𝑜𝑜𝓀 𝒶 𝓉𝒶𝒷𝓁𝑒</h1>
                         <h1 class='head2'>Make Reservation</h1>
                        </div>
                         <div class="form-row">
-                            <div class="col">
+                            <div class="col-lg-6 col-md-12">
                             <label class='label font-weight-bold'  style={{fontSize: '13px'}}>NAME*</label>
                             <input type="text" class="" placeholder='Name'/>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-md-12">
                             <label class='label font-weight-bold' style={{fontSize: '13px'}}>EMAIL*</label>
                             <input type="email" class="" placeholder='Email'/>
                             </div>
                         </div>
                         <div class="form-row mt-3">
-                            <div class="col">
+                            <div class="col-lg-6 col-md-12">
                             <label class='label font-weight-bold'  style={{fontSize: '13px'}}>PHONE</label>
                             <input type="text" class="" placeholder='Phone'/>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-md-12">
                             <label class='label font-weight-bold' placeholder='Date' style={{fontSize: '13px'}}>DATE*</label>
                             <input type="date"/>
                             </div>
@@ -37,12 +37,12 @@ function Reservation(props) {
                         </div>
 
 
-                        <div class="form-row mt-3">
-                            <div class="col">
+                        <div class="form-row mt-3 ">
+                            <div class="col-lg-6 col-md-12">
                             <label class='label font-weight-bold'  style={{fontSize: '13px'}}>TIME</label>
                             <input type="text" class="" placeholder='Time'/>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6 col-md-12">
                             <label class='label font-weight-bold' style={{fontSize: '13px'}}>PERSON*</label>
                             <input type="text" class=""  placeholder='Person'/>
                             </div>

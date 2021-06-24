@@ -1,11 +1,9 @@
 .myNavbar{
-    
+    z-index: 100000;
     display: flex;
-    position: relative;
     height: 100px;
     align-items: center;
-    border-bottom: .5px solid #504e4e
-    
+    border-bottom: .5px solid #504e4e;
 }
 .myNavbar   .my_nav_item li{
     display: inline-flex;
@@ -89,4 +87,11 @@
         
         visibility: visible;
     }
+}
+@media (min-width: 768px) {
+    .navChanged{
+        background: black;
+        height: 70px;
+    }
+   
 }

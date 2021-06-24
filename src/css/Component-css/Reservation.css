@@ -68,3 +68,39 @@ input[type="date"]:valid::before {
 .reservation_form .head2{
     font-size: 3rem;
 }
+@media(max-width: 991px) and (min-width: 768px){
+    .reservation_section{
+        height: 1006px;
+    }
+}
+
+@media(max-width: 768px) and (min-width: 576px){
+    .reservation_section{
+        height: 1015px;
+    }
+    
+}
+@media(max-width: 576px) and (min-width:455px){
+    .reservation_section{
+        height: 1050px;
+    }
+}
+@media(max-width: 576px){
+    .reservation_section{
+        height: 811px;
+    }
+    .reservation_section .reservation_form .head1, .reservation_form  .head2{
+        font-size: 2rem;
+    }
+    .reservation_section .reservation_form{
+        padding: 1rem;
+    }
+    .reservation_section .reservation_form input{
+        padding: 10px
+    }
+}
+@media (min-width: 576px) {
+    .reservation_section .reservation_form{
+        padding: 3rem;
+    }
+}
