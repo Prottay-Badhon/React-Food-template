@@ -9,6 +9,12 @@ import food10 from '../image/food10.jpg'
 import '../css/page-css/Menu.css'
 import SliderSection from '../Components/SliderSection';
 const Menu=(props)=> {
+
+    const [icon,setIcon]=useState(false)
+    const showSubNavbar=()=>{
+        setIcon(!icon);
+    }
+
         const[item,setItem]=useState({
             food1:food6,
             food2:food7,
@@ -56,7 +62,18 @@ const Menu=(props)=> {
 
          </SliderSection>
         <div class='menuPage  mt-5'>
-            <div class='row firstRow px-3'>
+            <div class="text-center">
+                <ul class="subNavbar">
+                    
+                    <li onClick={showSubNavbar}>Breakfast<i className={icon ?"fas fa-caret-down": ""}></i></li>
+                    <li onClick={showSubNavbar}>Lunch<i className={icon ?"fas fa-caret-down": ""}></i></li>
+                    <li onClick={showSubNavbar}>Dinner<i className={icon ?"fas fa-caret-down": ""}></i></li>
+                    <li onClick={showSubNavbar}>Drinks<i className={icon ?"fas fa-caret-down": ""}></i></li>
+                    <li onClick={showSubNavbar}>Desserts<i className={icon ?"fas fa-caret-down": ""}></i></li>
+                    <li onClick={showSubNavbar}>Wine<i className={icon ?"fas fa-caret-down": ""}></i></li>
+                </ul>
+            </div>
+            <div class='row firstRow px-3 mt-5'>
                 {
                     MenuData.map((menu,index)=>{
                         return(

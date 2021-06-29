@@ -26,3 +26,30 @@
         margin-top: 1245px;
     }
 }
+.menuPage .subNavbar li{
+    display: inline-flex;
+    padding: 5px;
+    margin: 2px;
+    width: 160px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+
+}
+.menuPage .subNavbar li:hover{
+    background: burlywood;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.menuPage .subNavbar .fa-caret-down{
+    position: absolute;
+    margin: auto;
+    top: 48px;
+    font-size: 30px;
+    color: burlywood;
+}

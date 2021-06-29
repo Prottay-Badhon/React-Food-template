@@ -77,7 +77,7 @@
 
 @media(min-width: 768px){
     .myNavbar{
-      
+       background: black;
         border-bottom: .5px solid #504e4e
     }
     .myNavbar .bar{

@@ -5,6 +5,10 @@ import '../css/Component-css/SliderSection.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 function SliderSection(props) {
+    const slider_div = {
+       visibility: props.visibility
+      };
+      
     useEffect(() => {
         Aos.init({
             offset: 200,
@@ -27,7 +31,7 @@ function SliderSection(props) {
                         <div class='row'>
                        
                         <div class='col-lg-3'>
-                            <div class='slider-div' data-aos='fade-down'>
+                            <div class='slider-div' data-aos='fade-down' style={slider_div}>
                                 <img  src={props.food1} class='rounded-circle'></img>
                                 <div>
                                     <h6>{props.food1Name}</h6>
@@ -38,7 +42,7 @@ function SliderSection(props) {
                             </div>
                         </div>
                         <div class='col-lg-3'>
-                            <div class='slider-div' data-aos='fade-down'>
+                            <div class='slider-div' data-aos='fade-down' style={slider_div}>
                                 <img  src={props.food2} class='rounded-circle'></img>
                                 <div>
                                     <h6>{props.food2Name}</h6>
@@ -51,7 +55,7 @@ function SliderSection(props) {
                         </div>
 
                         <div class='col-lg-3'>
-                            <div class='slider-div' data-aos='fade-up' data-aos-easing="ease">
+                            <div class='slider-div' data-aos='fade-up' data-aos-easing="ease" style={slider_div}>
                                 <img  src={props.food3} class='rounded-circle'></img>
                                 <div>
                                     <h6>{props.food3Name}</h6>
@@ -63,7 +67,7 @@ function SliderSection(props) {
                             </div>
                         </div>
                         <div class='col-lg-3'>
-                            <div class='slider-div' data-aos='fade-up' data-aos-easing="ease">
+                            <div class='slider-div' data-aos='fade-up' data-aos-easing="ease" style={slider_div}>
                                 <img  src={props.food4} class='rounded-circle'></img>
                                 <div>
                                     <h6>{props.food4Name}</h6>

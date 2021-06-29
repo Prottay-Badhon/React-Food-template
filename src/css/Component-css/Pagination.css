@@ -1,0 +1,78 @@
+.pageNumbers {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pageNumbers li {
+    display: inline-flex;
+    background: white;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid burlywood;
+    color: burlywood;
+    margin: 2px;
+    font-size: 20px;
+  }
+  
+  .pageNumbers li.active {
+    background-color: burlywood;
+    color: white;
+  }
+  
+  .pageNumbers li button {
+    background-color: transparent;
+    border: none;
+    color: burlywood;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+  }
+  .pageNumbers li button:hover {
+    background-color: burlywood;
+    color: white;
+   
+  }
+  .pageNumbers li button:focus {
+    outline: none;
+  }
+  
+  .loadmore {
+    padding: 1rem;
+    background-color: yellow;
+  
+    color: blue;
+    font-size: 1.2rem;
+    border: 1px solid red;
+    cursor: pointer;
+  }
+ 
+
+  /*Card style*/
+  
+.PaginationImg{
+    height: 300px;
+    cursor: pointer;
+}
+
+.comment{
+    position: absolute;
+    right: 0;
+    color: gray;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.card-body{
+    position: relative;
+    cursor: pointer;
+
+}

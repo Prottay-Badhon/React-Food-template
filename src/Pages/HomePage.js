@@ -11,6 +11,7 @@ import MenuSection from '../Components/MenuSection'
 import ChefSection from '../Components/ChefSection'
 import Reservation from '../Components/Reservation.js'
 import CustomerSection from '../Components/CustomerSection.js'
+import ContactPage from './ContactPage';
 import RecentPost from '../Components/RecentPost';
 import Menu from './Menu';
 import food1  from '../image/food1.jpeg'
@@ -43,6 +44,7 @@ function HomePage(props) {
     })
     return (
         <>
+        
      <SliderSection sliderName={info.sliderName}
       food1={info.food1}
       food2={info.food2}
@@ -62,7 +64,7 @@ function HomePage(props) {
       food4Des={info.food4Des}
 
 
-      />
+      /> 
      <AboutSection/>
      <ServiceSection/>
      <MenuSection/>
