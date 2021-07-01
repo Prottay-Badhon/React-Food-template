@@ -50,6 +50,17 @@
 }
 
  }
- 
-
+ .chefSection .card:hover{
+     cursor: pointer;
+     box-shadow: 5px 10px 20px 1px rgb(184, 181, 181);
+ }
+.chefSection .card img{
+    transform: scale(1);
+}
+.chefSection .card img:hover{
+    transform: scale(1.1);
+}
+.chefSection .overflow{
+    overflow: hidden;
+}
  

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import "../css/page-css/ContactPage.css"
-
+import ScrollToTop from "../Components/ScrollToTop"
 import SliderData from "../Pages/SliderData"
 import food1 from "../image/food1.jpeg"
 import food2 from "../image/food2.jpeg"

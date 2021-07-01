@@ -7,6 +7,7 @@ import Error from './Error';
 import Stories from '../Pages/Stories';
 import ContactPage from '../Pages/ContactPage';
 import SliderData from '../Pages/SliderData';
+import ScrollToTop from './ScrollToTop';
 function Navbar(props) {
 
   
@@ -49,6 +50,7 @@ function Navbar(props) {
               <i className={click ? 'fas fa-close': 'fas fa-bars'}> </i><span> MENU</span>
               </div>
                 </div>
+              <ScrollToTop/>
               <Switch>
                 <Route exact path='/' component={HomePage}></Route>
                 <Route exact path="/menu" component={Menu}></Route>

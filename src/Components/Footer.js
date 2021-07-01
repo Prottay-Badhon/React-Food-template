@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/Component-css/Footer.css'
 import { motion } from "framer-motion"
 import food1 from '../image/food1.jpeg'
 
 function Footer(props) {
+    const [footerAni,setFooterAni]=useState(false)
+    var x = document.getElementsByClassName("footer");
+    const myFooter=()=>{
+        
+            setFooterAni(true)
+       
+    }
+    window.addEventListener("scroll",myFooter)
     const iconVariant={
         hidden: { opacity: 0,
         },

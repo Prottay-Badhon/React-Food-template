@@ -5,6 +5,7 @@ import MyRouter from './Components/MyRouter';
 import Footer from './Components/Footer';
 import HomePage from './Pages/HomePage';
 import Menu from "./Pages/Menu"
+import ScrollBtn from './Components/ScrollBtn';
 import { BrowserRouter, Route, Link,NavLink, Switch} from "react-router-dom";
 
 function App() {
@@ -12,7 +13,6 @@ function App() {
     <div className="App" style={{margin: "0px"}}>
      
      <BrowserRouter>
-
        <Navbar/>
        </BrowserRouter>
 

@@ -62,8 +62,9 @@ function ChefSection(props) {
                    <motion.div class="card" variants={cardVariants}
                    initial='hidden'
                    animate='visible'
-                   >
+                   ><div class='overflow'>
                     <img class="card-img-top" src={chef6} alt="Card image cap"/>
+                    </div>
                     <div class="card-body text-left">
                         <h5 class="card-title">Jhon Smooth</h5>
                         <p class="card-text">Restaurent owner</p>
@@ -87,7 +88,10 @@ function ChefSection(props) {
                    initial='hidden'
                    animate='visible'
                    >
+                   <div class='overflow'>
+
                     <img class="card-img-top" src={chef5} alt="Card image cap"/>
+                    </div>
                     <div class="card-body text-left">
                         <h5 class="card-title">Jhon Smooth</h5>
                         <p class="card-text">Restaurent owner</p>
@@ -111,7 +115,9 @@ function ChefSection(props) {
                    initial='hidden'
                    animate='visible'
                    >
+                   <div class='overflow'>
                     <img class="card-img-top" src={chef4} alt="Card image cap"/>
+                    </div>
                     <div class="card-body text-left">
                         <h5 class="card-title">Jhon Smooth</h5>
                         <p class="card-text">Restaurent owner</p>
@@ -136,7 +142,9 @@ function ChefSection(props) {
                    initial='hidden'
                    animate='visible'
                    >
+                   <div class='overflow'>
                     <img class="card-img-top" src={chef3} alt="Card image cap"/>
+                    </div>
                     <div class="card-body text-left">
                         <h5 class="card-title">Jhon Smooth</h5>
                         <p class="card-text">Restaurent owner</p>
