@@ -62,7 +62,7 @@ const Menu=(props)=> {
 
          </SliderSection>
         <div class='menuPage  mt-5'>
-            <div class="text-center">
+           {/* <div class="text-center">
                 <ul class="subNavbar">
                     
                     <li onClick={showSubNavbar}>Breakfast<i className={icon ?"fas fa-caret-down": ""}></i></li>
@@ -72,8 +72,8 @@ const Menu=(props)=> {
                     <li onClick={showSubNavbar}>Desserts<i className={icon ?"fas fa-caret-down": ""}></i></li>
                     <li onClick={showSubNavbar}>Wine<i className={icon ?"fas fa-caret-down": ""}></i></li>
                 </ul>
-            </div>
-            <div class='row firstRow px-3 mt-5'>
+            </div> */}
+            <div class='row firstRow px-3'>
                 {
                     MenuData.map((menu,index)=>{
                         return(

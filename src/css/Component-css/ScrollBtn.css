@@ -1,0 +1,14 @@
+.scrollBtn{
+    height: 50px;
+    width: 50px;
+    background: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 50%;
+    box-shadow: 2px 5px 10px red;
+    border: none;
+    border-radius: 100%;
+}

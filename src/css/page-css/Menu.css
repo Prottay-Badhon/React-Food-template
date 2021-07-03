@@ -53,3 +53,8 @@
     font-size: 30px;
     color: burlywood;
 }
+@media(max-width: 768px){
+    .firstRow{
+        margin-top: 1000px;
+    }
+}
