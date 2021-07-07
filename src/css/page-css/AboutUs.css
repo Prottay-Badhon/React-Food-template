@@ -1,0 +1,11 @@
+.aboutUsPage{
+    background: #120078;
+}
+.aboutUsPage .aboutDiv{
+    height: 700px;
+    padding: 200px 0;  
+}
+.aboutUsPage .fa-ul .fa-check-square{
+    padding: 0; 
+    color: rgb(151, 226, 39);
+}

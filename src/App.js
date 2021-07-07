@@ -7,21 +7,16 @@ import Footer from './Components/Footer';
 import HomePage from './Pages/HomePage';
 import Menu from "./Pages/Menu";
 import "./css/Component-css/ScrollBtn.css";
+import ScrollBtn from './Components/ScrollBtn';
 import { BrowserRouter, Route, Link,NavLink, Switch} from "react-router-dom";
 
 function App() {
-  const [displayScroll,setDisplayScroll]=useState(true)
-  const scrollFn=()=>{
-       if(window.scrollY>700){
-           setDisplayScroll(true);
-       }
-       else setDisplayScroll(true);
-   }
-   window.addEventListener("scroll",scrollFn)   
+   
   return (
     <div className="App" style={{margin: "0px"}}>
      
      <BrowserRouter>
+     <ScrollBtn/>
        <Navbar/>
        </BrowserRouter>
       <Footer/>

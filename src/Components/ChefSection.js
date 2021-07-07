@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import chef1 from '../image/chef1.jpeg'
 
 import chef3 from '../image/chef3.jpg'
@@ -12,6 +12,16 @@ import { motion } from "framer-motion"
 
 import '../css/Component-css/ChefSection.css'
 function ChefSection(props) {
+
+    const [Animy,setAnymy]=useState(false)
+   const showAnimation=()=>{
+        if(window.scrollY>2700){
+            setAnymy(true)
+        }
+        else
+        setAnymy(false);
+    }
+    window.addEventListener("scroll",showAnimation)
     const rowVariant={
         off: { opacity: 0 },
         on: {
@@ -41,7 +51,7 @@ function ChefSection(props) {
         show: {
           opacity: 1,
           transition: {
-            staggerChildren: .6
+            staggerChildren: 1
           }
         }
     }
@@ -61,7 +71,7 @@ function ChefSection(props) {
                    <div class='col-lg-3 col-md-6 col-sm-12'>
                    <motion.div class="card" variants={cardVariants}
                    initial='hidden'
-                   animate='visible'
+                   animate={Animy? "visible": ""}
                    ><div class='overflow'>
                     <img class="card-img-top" src={chef6} alt="Card image cap"/>
                     </div>
@@ -70,7 +80,7 @@ function ChefSection(props) {
                         <p class="card-text">Restaurent owner</p>
                         <motion.ul class='social_icon text-left' variants={iconVariant}
                         initial='hidden'
-                        animate='show'
+                        animate={Animy? "show": ""}
                         >
                             <motion.li variants={item}><i class='fa fa-twitter'></i></motion.li>
                             <motion.li variants={item}><i class='fa fa-facebook'></i></motion.li>
@@ -86,7 +96,7 @@ function ChefSection(props) {
                    <div class='col-lg-3 col-md-6 col-sm-12'>
                    <motion.div class="card" variants={cardVariants}
                    initial='hidden'
-                   animate='visible'
+                   animate={Animy? "visible": ""}
                    >
                    <div class='overflow'>
 
@@ -97,7 +107,7 @@ function ChefSection(props) {
                         <p class="card-text">Restaurent owner</p>
                         <motion.ul class='social_icon text-left' variants={iconVariant}
                         initial='hidden'
-                        animate='show'
+                        animate={Animy? "show": ""}
                         >
                             <motion.li variants={item}><i class='fa fa-twitter'></i></motion.li>
                             <motion.li variants={item}><i class='fa fa-facebook'></i></motion.li>
@@ -113,7 +123,7 @@ function ChefSection(props) {
                    <div class='col-lg-3 col-md-6 col-sm-12'>
                    <motion.div class="card" variants={cardVariants}
                    initial='hidden'
-                   animate='visible'
+                   animate={Animy? "visible": ""}
                    >
                    <div class='overflow'>
                     <img class="card-img-top" src={chef4} alt="Card image cap"/>
@@ -123,7 +133,7 @@ function ChefSection(props) {
                         <p class="card-text">Restaurent owner</p>
                         <motion.ul class='social_icon text-left' variants={iconVariant}
                         initial='hidden'
-                        animate='show'
+                        animate={Animy? "show": ""}
                         >
                             <motion.li variants={item}><i class='fa fa-twitter'></i></motion.li>
                             <motion.li variants={item}><i class='fa fa-facebook'></i></motion.li>
@@ -140,7 +150,7 @@ function ChefSection(props) {
                    <div class='col-lg-3 col-md-6 col-sm-12'>
                    <motion.div class="card" variants={cardVariants}
                    initial='hidden'
-                   animate='visible'
+                   animate={Animy? "visible": ""}
                    >
                    <div class='overflow'>
                     <img class="card-img-top" src={chef3} alt="Card image cap"/>
@@ -150,7 +160,7 @@ function ChefSection(props) {
                         <p class="card-text">Restaurent owner</p>
                         <motion.ul class='social_icon text-left' variants={iconVariant}
                         initial='hidden'
-                        animate='show'
+                        animate={Animy? "show": ""}
                         >
                             <motion.li variants={item}><i class='fa fa-twitter'></i></motion.li>
                             <motion.li variants={item}><i class='fa fa-facebook'></i></motion.li>

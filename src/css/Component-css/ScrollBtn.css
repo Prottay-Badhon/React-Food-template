@@ -1,14 +1,29 @@
 .scrollBtn{
+    outline: white;
     height: 50px;
     width: 50px;
-    background: burlywood;
+    border: none;
+    border-radius: 100%;
+    color: white;
+    font-size: 20px;
+}
+.scroll_btn_div{
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 5px 10px red; 
+    border: none;
+    border-radius: 100%;
+    
+    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
+    right: 10px;
+    
+    position: fixed;
+    z-index: 100000000;
+    top: 500px;
+}
+.scrollBtn:hover{
     color: white;
-    position: absolute;
-    right: 50%;
-    box-shadow: 2px 5px 10px red;
-    border: none;
-    border-radius: 100%;
 }

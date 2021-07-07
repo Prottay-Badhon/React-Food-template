@@ -22,6 +22,20 @@
     font-size: 20px;
   }
   
+  @media(max-width:400px){
+   .pageNumbers li{
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+   }
+   .pageNumbers li button:hover {
+    background-color: burlywood;
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: 13px;
+  }
+  }
   .pageNumbers li.active {
     background-color: burlywood;
     color: white;

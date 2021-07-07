@@ -36,7 +36,6 @@ function Footer(props) {
         <>
 
             <div class='footer text-white py-5'>
-            <ScrollBtn/>
 
                 <div class='container py-5'>
                     <div class='row'>

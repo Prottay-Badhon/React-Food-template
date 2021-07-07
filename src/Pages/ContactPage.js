@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import "../css/page-css/ContactPage.css"
 import ScrollToTop from "../Components/ScrollToTop"
@@ -6,10 +6,13 @@ import SliderData from "../Pages/SliderData"
 import food1 from "../image/food1.jpeg"
 import food2 from "../image/food2.jpeg"
 import food3 from "../image/food3.jpeg"
+import music from "../Audio/Komiku_-_08_-_Un_dsert.mp3"
+import { Component } from 'react';
 
-import {FaArrowAltCircleLeft, FaArrowAltCircleRight, FaPlay} from "react-icons/fa";
-function ContactPage(props) {
-    const settings = {
+class ContactPage extends Component {
+  
+    render(){
+      const settings = {
         infinite: true,
         speed: 500,
         fade: true,
@@ -36,11 +39,10 @@ function ContactPage(props) {
           }
         ]
       };
-    const [current,setCurrent]=useState(0);
-    
     return (
         <>
             <section className='slider'>
+
             <Slider {...settings}>
               <div class="slide_background1">
                     <div class="dark-overlay">
@@ -76,7 +78,7 @@ function ContactPage(props) {
               <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-
+                    
                     </div>
                     <div class="col-lg-6">
                       <form>
@@ -102,9 +104,11 @@ function ContactPage(props) {
                     </div>
                 </div>
               </div>
+             
              </section>
+            
         </>
     );
+  }
 }
-
 export default ContactPage
