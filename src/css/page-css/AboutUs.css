@@ -2,10 +2,50 @@
     background: #120078;
 }
 .aboutUsPage .aboutDiv{
-    height: 700px;
-    padding: 200px 0;  
+ padding: 200px 0px;
+}
+#home-video{
+    position: relative;
+    background: url('../../image/kabab2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    height: 400px; 
+    
+  
+}
+.aboutUsPage .dark-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutUsPage .dark-overlay{
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+}
+.aboutUsPage .fa-play{
+    font-size: 40px;
 }
 .aboutUsPage .fa-ul .fa-check-square{
     padding: 0; 
     color: rgb(151, 226, 39);
 }
+.aboutUsPage .Delicious button{
+   width: 140px;
+   background: tomato;
+   color: white;
+   border: none;
+   height: 50px;
+   border-radius: 30px;
+
+}
+.aboutUsPage .Delicious button:hover{
+   
+    background: rgb(255, 117, 92);
+ 
+ }
