@@ -1,0 +1,30 @@
+
+  
+.cart_container .product_img,.product_price,.product_name,.delete_item,.product_quantity{
+    display: inline-flex;
+    margin: 20px;
+}
+.cart_container .delete_item .fa{
+    font-size: 30px;
+}
+.cart_container .cart_item .product_img img{
+    height: 100px;
+    width: 100px
+}
+.cart_container .cart_item  .product_quantity input{
+    width: 50px
+}
+.cart_container .cart_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110;
+}
+.cart_container{
+    width: 800px;
+}
+.cart{
+    display: flex;
+    justify-content:center ;
+
+}

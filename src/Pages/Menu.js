@@ -8,11 +8,21 @@ import food10 from '../image/food10.jpg'
 
 import '../css/page-css/Menu.css'
 import SliderSection from '../Components/SliderSection';
+import { useLocation } from 'react-router-dom';
+import MenuCategory from "../Json Data/MenuCategory"
 const Menu=(props)=> {
-
+   const path = useLocation()
+    const [MenuItem,setMenuItem] = useState(MenuData)
     const [icon,setIcon]=useState(false)
-    const showSubNavbar=()=>{
-        setIcon(!icon);
+    
+    const findBycategory=(catName)=>{
+        
+        const newItem  =  MenuData.filter((currElm)=>{
+           return currElm.category.toUpperCase() === catName.toUpperCase()
+           
+        })
+      setMenuItem(newItem )
+       
     }
 
         const[item,setItem]=useState({
@@ -40,7 +50,7 @@ const Menu=(props)=> {
 
         <>
         <SliderSection sliderName="Specialties" 
-         pathName={"Home/Menu"}
+         pathName={"home"+path.pathname}
          food1={item.food1}
          food2={item.food2}
          food3={item.food3}
@@ -61,21 +71,24 @@ const Menu=(props)=> {
          >
 
          </SliderSection>
-        <div class='menuPage  mt-5'>
-           {/* <div class="text-center">
+        <div class='menuPage mt-lg-5'>
+           <div class="text-center ">
                 <ul class="subNavbar">
-                    
-                    <li onClick={showSubNavbar}>Breakfast<i className={icon ?"fas fa-caret-down": ""}></i></li>
-                    <li onClick={showSubNavbar}>Lunch<i className={icon ?"fas fa-caret-down": ""}></i></li>
-                    <li onClick={showSubNavbar}>Dinner<i className={icon ?"fas fa-caret-down": ""}></i></li>
-                    <li onClick={showSubNavbar}>Drinks<i className={icon ?"fas fa-caret-down": ""}></i></li>
-                    <li onClick={showSubNavbar}>Desserts<i className={icon ?"fas fa-caret-down": ""}></i></li>
-                    <li onClick={showSubNavbar}>Wine<i className={icon ?"fas fa-caret-down": ""}></i></li>
+                    {
+                        MenuCategory.map((info,index)=>{
+                            const {name,id,status}=info
+                         return (
+                            <li onClick={()=>findBycategory(name)}>{name}<i className={icon ?"fas fa-caret-down": ""}></i></li>
+                         )   
+                        })
+                    }
+                   
                 </ul>
-            </div> */}
-            <div class='row firstRow px-3'>
+            </div>
+            <div class='row  px-3'>
                 {
-                    MenuData.map((menu,index)=>{
+                    
+                    MenuItem.map((menu,index)=>{
                         return(
                             <div class='col-lg-6 col-md-6  '>
                                 <div class='row'>
@@ -88,7 +101,7 @@ const Menu=(props)=> {
                                         <div class='contentDiv'>
                                                 <h4>{menu.name}</h4>
                                                  <div class='dolar'>Cost: {menu.price}</div>
-
+                                                    <p>Category: {menu.category}</p>
                                                     <p>{menu.description}</p>
                                                     <button class='btn'>Order now</button>
                                        </div>

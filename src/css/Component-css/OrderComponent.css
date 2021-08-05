@@ -1,0 +1,11 @@
+.order_div{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.order_div .table .number{
+    width: 80px;
+}
+.order_div button{
+    width: 100%;
+}

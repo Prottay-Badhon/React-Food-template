@@ -5,26 +5,25 @@
 }
 
 
-.menu_order_div{
+.menuSection .contentDiv{
     position: relative;
     text-align: left;
 }
-.menu_order_div .dolar{
-    position: absolute;
-    right: 0;
-    top: -3px;
+.menuSection .contentDiv .dolar{
+    
     color: burlywood;
     font-size: 25px;
     font-weight: bold;
 }
-.menuSection .menu_order_div button{
+.menuSection  .contentDiv  button{
     background: burlywood;
     color: white;
     font-size: 18px;
     width: 112px;
-  
+    text-decoration: none;
 }
-.menuSection .menu_order_div button:hover{
+
+.menuSection .contentDiv button:hover{
     background: white;
     color: burlywood;
     border: 1px solid burlywood;

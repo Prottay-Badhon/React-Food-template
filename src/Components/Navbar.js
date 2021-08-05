@@ -9,6 +9,8 @@ import ContactPage from '../Pages/ContactPage';
 import SliderData from '../Pages/SliderData';
 import ScrollToTop from './ScrollToTop';
 import AboutUs from '../Pages/AboutUs';
+import OrderComponent from './OrderComponent';
+import AddToCart from './AddToCart';
 function Navbar(props) {
 
   
@@ -41,6 +43,7 @@ function Navbar(props) {
                       <NavLink to='/' exact activeStyle={{color: "burlywood"}}>Home
                       </NavLink>
                     </li>
+                    
                     <li><NavLink to='/menu'  exact activeStyle={{color: "burlywood"}}>Menu</NavLink></li>
                     <li><NavLink to='/story'  exact activeStyle={{color: "burlywood"}}>Stories</NavLink></li>
                     <li><NavLink to='/aboutUs'  exact activeStyle={{color: "burlywood"}}>About Us</NavLink></li>
@@ -58,6 +61,8 @@ function Navbar(props) {
                 <Route exact path="/menu" component={Menu}></Route>
                 <Route exact path="/story" component={Stories}></Route>
                 <Route exact path="/contact" component={()=><ContactPage slides={SliderData}/>}></Route>
+                <Route exact path="/order/:id/:name/:price" component={OrderComponent}></Route>
+               
                 <Route component={Error}></Route>
         
               </Switch>

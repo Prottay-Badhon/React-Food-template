@@ -54,7 +54,12 @@
     color: burlywood;
 }
 @media(max-width: 768px){
-    .firstRow{
+    /* .firstRow{
         margin-top: 1000px;
+    } */
+}
+@media(max-width: 991px){
+    .menuPage{
+        margin-top: 1400px;
     }
 }
